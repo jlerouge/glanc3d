@@ -28,7 +28,6 @@ HEADERS += \
     include/IHM/Widget3D.h \
     include/3D/Modeles/Arete.h \
     include/3D/Deformations/Rebouchage.h \
-    include/3D/Deformations/Reduction.h \
     include/3D/Modeles/Forme2D.h \
     include/IHM/PictureLabel.h \
     
@@ -54,7 +53,6 @@ SOURCES += \
     src/IHM/Widget3D.cpp \
     src/3D/Modeles/Arete.cpp \
     src/3D/Deformations/Rebouchage.cpp \
-    src/3D/Deformations/Reduction.cpp \
     src/3D/Modeles/Forme2D.cpp \
     src/IHM/PictureLabel.cpp \
     

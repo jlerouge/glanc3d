@@ -43,13 +43,12 @@ void PictureLabel::addClickableArea(int left, int top, int width, int height, in
 
 int PictureLabel::scaleX(int x)
 {
-    int retour=((imageWidth_/size().width())*x);
-    return retour;
+    return (imageWidth_/size().width())*x;
 }
 
 int PictureLabel::scaleY(int y)
 {
-    int retour=((imageHeight_/size().height())*y);
-    return retour;
+    return (imageHeight_/size().height())*y;
 }
+
 //#include <../../moc_PictureLabel.cpp>

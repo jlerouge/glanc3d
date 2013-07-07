@@ -4,7 +4,6 @@ glanc3d
 Abstract :
 - *Description* : a brand new 3d mesh viewer and editor
 - *Technologies* : C++, Qt, OpenGL
-- *Version* : 2013-07-01, rév. 2
 - *Editor* : the glanc3d team
 - *Main developers* : jujurackham, blitzfis
 - *Hosted by GitHub* : http://github.com/jujurackham/glanc3d

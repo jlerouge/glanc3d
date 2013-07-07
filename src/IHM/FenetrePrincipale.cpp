@@ -9,7 +9,7 @@
  */
 FenetrePrincipale::FenetrePrincipale(): paletteDeformation_(0), barreProgression_(0),
     paletteCouleur_(0), projection_(0), choixShader_(0), octree_(0), nomMesh_(0),
-    panneauOptions_(0), activationContour_(0), contourTemp_(false), contour_(false)
+    panneauOptions_(0), activationContour_(0), contourTemp_(false), contour_(true)
 {
     setWindowTitle(tr("glanc3d"));
     setWindowIcon(QIcon("ressources/images/glanc3d_icon.png"));
@@ -158,6 +158,7 @@ void FenetrePrincipale::initialiserMenu()
     panneauOptions_ = new QDialog;
     QVBoxLayout *optionsLayout = new QVBoxLayout;
     activationContour_ = new QCheckBox("Contour mesh");
+    activationContour_->setChecked(true);
     activationContour_->setToolTip(QString("Visualiser le contour du mesh"));
 
     projection_=new QPushButton("Vision orthographique");
@@ -280,12 +281,14 @@ void FenetrePrincipale::initialiserStatusBar()
 }
 
 /**
- * Action à  effectuer quand une touche est pressée
+ * Action à effectuer quand une touche est pressée
  *
  * @param event
  */
 void FenetrePrincipale::keyPressEvent(QKeyEvent *event)
-{}
+{
+
+}
 
 /**
  * Renvoie la valeur de barreProgression_
